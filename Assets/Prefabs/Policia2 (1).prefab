@@ -39,7 +39,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1812073135874446}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 6.04, y: -2.23, z: -137.44524}
+  m_LocalPosition: {x: 5.95, y: 2.79, z: -137.44524}
   m_LocalScale: {x: 2.30022, y: 2.30865, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -146,7 +146,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   visionRadius: 4
   attackRadius: 2.5
-  speed: 1.75
+  speed: 3
   LanzaPrefab: {fileID: 1208660502970422, guid: 4449425748f1a904d87a6de0f7d43760,
     type: 2}
   attackSpeed: 2

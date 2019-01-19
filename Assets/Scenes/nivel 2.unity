@@ -222,7 +222,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Score :
+  m_Text: 'Score :1
 
 '
 --- !u!222 &507486329
@@ -681,24 +681,19 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 95057310514067112, guid: eaec88b073f0b1544bfe0bd86b962a3b,
-        type: 2}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: 83f869c3ae27d1e4db68a9e467c36752, type: 2}
     - target: {fileID: 50378143283968942, guid: eaec88b073f0b1544bfe0bd86b962a3b,
         type: 2}
       propertyPath: m_Material
       value: 
       objectReference: {fileID: 6200000, guid: f50bedf3d90727f42bfb8ab20a2c7cfe, type: 2}
+    - target: {fileID: 95057310514067112, guid: eaec88b073f0b1544bfe0bd86b962a3b,
+        type: 2}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 83f869c3ae27d1e4db68a9e467c36752, type: 2}
     - target: {fileID: 1812073135874446, guid: eaec88b073f0b1544bfe0bd86b962a3b, type: 2}
       propertyPath: m_Name
       value: Policia2 (2)
-      objectReference: {fileID: 0}
-    - target: {fileID: 114955536586501724, guid: eaec88b073f0b1544bfe0bd86b962a3b,
-        type: 2}
-      propertyPath: speed
-      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eaec88b073f0b1544bfe0bd86b962a3b, type: 2}
@@ -1029,8 +1024,6 @@ MonoBehaviour:
   PlayerCollider: 0
   movement: 1
   Score: {fileID: 507486328}
-  winstxt: {fileID: 0}
-  WinsText: {fileID: 0}
   gamewins: {fileID: 0}
   gameWinsText: {fileID: 0}
   speed: 4
