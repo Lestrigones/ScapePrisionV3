@@ -18,7 +18,14 @@ public class Player1 : MonoBehaviour {
     int contadorpuntos;
     public Text Score;
 
+    //public Text winstxt;
+    //public GameObject WinsText;
+
     private Vector2 touchOrigin = -Vector2.one;
+
+
+    public GameObject gamewins;
+    public Text gameWinsText;
 
 
     public float speed = 4f;
@@ -28,10 +35,16 @@ public class Player1 : MonoBehaviour {
 
         rb2d = GetComponent<Rigidbody2D>();
         spr = GetComponent<SpriteRenderer>();
+        gamewins.SetActive(false);
 
         Healthbar = GameObject.Find("Healthbar");//divino!! funciona como dios manda!! :)))
 
     }
+
+   
+    
+       
+    
 
     private void OnCollisionEnter2D(Collision2D obj)
     {
@@ -52,13 +65,17 @@ public class Player1 : MonoBehaviour {
         if (obj.transform.tag == "cuerda")
         {
             Destroy(obj.transform.gameObject);
-            //contadorpuntos = contadorpuntos + 1;
-            //Score.text = "Score:" + contadorpuntos;
+            contadorpuntos = contadorpuntos + 1;
+            Score.text = "Score:" + contadorpuntos;
 
         }
         if (obj.transform.tag == "Exit")
         {
+
             Destroy(obj.transform.gameObject);
+            gamewins.SetActive(true);
+            Over.show();
+
 
 
         }
@@ -76,7 +93,10 @@ public class Player1 : MonoBehaviour {
 
         PreventMovement();
 
-
+        
+        
+            
+        
 
 
         /*Vector3 mov = new Vector3(
@@ -90,10 +110,13 @@ public class Player1 : MonoBehaviour {
             speed * Time.deltaTime
             );*/
 
+
+
     }
     public void EnemyKnockBack()//float enemyPosX
     {
         Healthbar.SendMessageUpwards("TakeDamage", 33);
+        
 
 
 

@@ -64,6 +64,7 @@
     <Compile Include="Assets\Scripts\BoardManager.cs" />
     <Compile Include="Assets\Scripts\Healthbar.cs" />
     <Compile Include="Assets\Scripts\Lanza.cs" />
+    <Compile Include="Assets\Scripts\Over.cs" />
     <Compile Include="Assets\Scripts\Player1.cs" />
     <Compile Include="Assets\Scripts\Policia1.cs" />
     <Compile Include="Assets\Scripts\Policia2.cs" />
@@ -99,6 +100,7 @@
     <None Include="Assets\Tiled2Unity\Shaders\shaDepth.shader" />
     <None Include="Assets\Tiled2Unity\Shaders\shaDiffuseDepth.shader" />
     <None Include="Assets\Tiled2Unity\Materials\_ReadMe.txt" />
+    <None Include="Assets\Fonts\OFL.txt" />
     <None Include="Assets\Tiled2Unity\Textures\_ReadMe.txt" />
     <None Include="Assets\Tiled2Unity\Shaders\shaDefault-Instanced.shader" />
     <None Include="Assets\Tiled2Unity\Shaders\shaColorKey-Instanced.shader" />

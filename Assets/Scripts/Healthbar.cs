@@ -22,9 +22,15 @@ public class Healthbar : MonoBehaviour {
         healthpoints = Mathf.Clamp(healthpoints - cantidad, 0f, maxHealt);//no puede ser menor 0 y mayor del maximo
         Health.transform.localScale = new Vector2(healthpoints / maxHealt, 1);// x e y
 
+      if (maxHealt <= 0)
+        {
+            Over.show();
+        }
 
 
     }
+
+    
 	
 	
 }

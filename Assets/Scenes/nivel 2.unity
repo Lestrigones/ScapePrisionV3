@@ -171,7 +171,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &507486327
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1028,7 +1028,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PlayerCollider: 0
   movement: 1
-  Score: {fileID: 0}
+  Score: {fileID: 507486328}
+  winstxt: {fileID: 0}
+  WinsText: {fileID: 0}
+  gamewins: {fileID: 0}
+  gameWinsText: {fileID: 0}
   speed: 4
 --- !u!50 &1950849338
 Rigidbody2D:
